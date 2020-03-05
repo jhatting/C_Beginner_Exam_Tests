@@ -7,7 +7,7 @@ The pointer passed to the function contains the address of the strings first cha
 
 * Creation Date : 04-03-2020
 
-* Last Modified : Thu Mar  5 11:16:23 2020
+* Last Modified : Thu Mar  5 12:03:41 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -18,7 +18,7 @@ void ft_putstr(char *str);
 
 int main()
 {
-    char string[40] = "This String";
+    char string[] = "This String";
    ft_putstr(string);
    return 0;
 }
