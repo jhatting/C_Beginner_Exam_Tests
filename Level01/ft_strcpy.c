@@ -29,13 +29,18 @@ char *ft_strcpy(char *s1, char *s2)
     s1[i] ='\0';
     return(s1);
 }
+//-----------------------------------------------------------
+// #include <stdio.h>
 
-int main()
-{
-    char str1 [] = "helle";
-    char str [] = "Sam";
+// int	main(void)
+// {
+// 	char src[] = "Waffles";
+// 	char dst[] = "Pancakes";
 
-    ft_strcpy(str1, str);
-    printf("%s = str1 = helle and %s = str = Sam " , str1, str);
-    return(0);
-}
+// 	printf("%s\n", src);
+// 	printf("%s\n", dst);
+
+// 	ft_strcpy(dst, src);
+
+// 	printf("After copying: %s\n", dst);
+// }
