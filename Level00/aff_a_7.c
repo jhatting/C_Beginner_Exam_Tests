@@ -7,7 +7,34 @@
 
 * Creation Date : 09-03-2020
 
-* Last Modified : Mon Mar  9 10:58:52 2020
+* Last Modified : Mon Mar  9 11:16:39 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
+
+#include <unistd.h>
+
+void aff_a(char *str)
+{
+    if (*str != '\0')
+    {
+        while(*str == 'a')
+        {
+            write(1, "a",1);
+            break;
+        }
+       write(1, "\n", 1);
+    }
+    return(0);
+}
+
+int main(int argc, char *argc[])
+{
+    if (argc == 2)
+        aff_a(argv[1]);
+        else 
+            write(1, "\n", 1);
+
+            return(0);
+}
+
