@@ -6,7 +6,7 @@
 
 * Creation Date : 09-03-2020
 
-* Last Modified : Mon Mar  9 11:28:49 2020
+* Last Modified : Mon Mar  9 11:32:01 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -32,8 +32,7 @@ int main(int argc, char *argv[])
     if (argc == 2)
         aff_a(argv[1]);
         else
-        {
             write(1, "a\n", 1);
-        }
+
         return(0);
 }
