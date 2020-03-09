@@ -6,7 +6,7 @@
 
 * Creation Date : 09-03-2020
 
-* Last Modified : Mon Mar  9 10:32:01 2020
+* Last Modified : Mon Mar  9 10:32:57 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -24,7 +24,7 @@ void aff_a(char *str)
         }
         ++str;
     }
-    write(1, "\n', 1);
+    write(1, "\n", 1);
 }
 
 int main (int argc, char *argv[])
