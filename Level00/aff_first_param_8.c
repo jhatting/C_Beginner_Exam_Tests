@@ -6,7 +6,7 @@
 
 * Creation Date : 10-03-2020
 
-* Last Modified : Tue Mar 10 08:52:09 2020
+* Last Modified : Tue Mar 10 08:55:00 2020
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
@@ -24,7 +24,7 @@ int	ft_strlen(char *str)
 int	main(int argc, char **argv)
 {
 	if (argc >= 2)
-		write(1, argv[1], ft_strlen(argv[1]));
+		write(1, argv[argc-1], ft_strlen(argv[1]));
 	write(1, "\n", 1);
 	return (0);
 }
