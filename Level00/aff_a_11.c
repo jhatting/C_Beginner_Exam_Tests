@@ -30,3 +30,25 @@ a$
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
+
+#include <unistd.h>
+
+void aff_a(char *str)
+
+{
+    if (*str == 'a')
+        write(1, "a\n", 2);
+        else 
+            write(1, "\n", 1);
+}
+
+int main(int argc, char *argv[])
+{
+    int i = 0;
+
+    if (argc >= 2)
+        aff_a(argv[1]);
+        else 
+            write(1, "a\n", 2);
+            return(0);
+}
