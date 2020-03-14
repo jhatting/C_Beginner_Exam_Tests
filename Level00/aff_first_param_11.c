@@ -36,7 +36,7 @@ int ft_putstr(char *str)
 
 int main(int argc, char *argv[])
 {
-    if (argc <= 2)
+    if (argc >= 2)
     while (argv[1])
         write(1, argv[1], ft_putstr(argv[1]));
         write(1, "\n", 1);
