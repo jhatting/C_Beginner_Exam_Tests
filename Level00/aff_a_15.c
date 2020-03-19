@@ -44,8 +44,8 @@ int aff_a(char *str)
             break;
         }
         str++;
-        write(1, "\n",1);
     }
+    write(1, "\n",1);
 }
 
 int main(int argc, char *argv[])
