@@ -37,10 +37,13 @@ void aff_a(char *str)
 {
     while(*str != '\0')
     {
-        write(1, "a", 1);
-        break;
-    }
+        if( *str == 'a')
+        {
+            write(1, "a", 1);
+            break;
+        }
     str++;
+    }
     write(1, "\n",1);
 }
 
