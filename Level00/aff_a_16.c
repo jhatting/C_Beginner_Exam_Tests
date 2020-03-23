@@ -35,7 +35,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void aff_a(char *str)
 {
-    while(str != '\0')
+    while(*str != '\0')
     {
         write(1, "a", 1);
         break;
@@ -46,10 +46,8 @@ void aff_a(char *str)
 
 int main(int argc, char *argv[])
 {
-    int i = 0;
-
-    if (argc >= 2)
-    aff_a(argv[i]);
+    if (argc == 2)
+    aff_a(argv[1]);
     else
         write(1, "a\n", 2);
         return(0);
