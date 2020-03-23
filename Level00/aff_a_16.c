@@ -33,7 +33,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <unistd.h>
 
-int aff_a(char *str)
+void aff_a(char *str)
 {
     while(str != '\0')
     {
