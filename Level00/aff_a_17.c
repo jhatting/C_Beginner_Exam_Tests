@@ -46,7 +46,7 @@ void aff_a(char *str)
         write(1, "\n", 1);
 }
 
-int main(int argc, char *argc[])
+int main(int argc, char *argv[])
 {
     if (argc == 2)
         aff_a(argv[1]);
