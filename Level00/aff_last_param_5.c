@@ -13,8 +13,7 @@ argument followed by a newline.
 If the number of arguments is less than 1, the program displays a newline.
 
 Examples:
-
-$> ./aff_last_param "Zelda" "is" "a" "boy" | cat -e
+> ./aff_last_param "Zelda" "is" "a" "boy" | cat -e
 boy$
 $> ./aff_last_param "I read this on internet !" | cat -e
 I read this on internet !$
@@ -39,10 +38,10 @@ int ft_strlen(char *str)
         return(i);
 }
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
     if (argc >=2)
-        write(1, argv[arc - 1], ft_strlen(argv[1]));
+        write(1, argv[argc -1], ft_strlen(argv[1]));
         write(1, "\n", 1);
         return(0);
 }
