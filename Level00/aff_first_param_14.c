@@ -33,16 +33,17 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 int ft_strlen(char *str)
 {
-    int i = 1;
+    int i = 0;
+
     while (str[i] != '\0');
     i++;
-    return(i);
+    return (i);
 }
 
 int main(int argc, char *argv[])
 {
-    if (argc >= 2)
-        write(1, argv[1],ft_strlen(argv[1]));
+    if (argc != 1)
+        write(1, argv[1], ft_strlen(argv[1]));
         write(1, "\n", 1);
         return(0);
 }
