@@ -29,3 +29,17 @@ $
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
 
+#include <unistd.h>
+
+int ft_strlen(char *str)
+{
+    int i = 0;
+    while (str[i] != '\0')
+        i++;
+        return(i);
+}
+
+int main(int argc, char *argv[])
+{
+    if (argc >= 2)
+        write(1, argv
