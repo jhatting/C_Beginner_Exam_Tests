@@ -18,17 +18,19 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 #include <unistd.h>
 #include <stdio.h>
 
-//void ft_swap(char *a, char *b)
-//{
-//    int swap = *a;
-//    *a = *b;
-//    *b = swap;
-//}
+void ft_swap(char *a, char *b)
+{
+    int swap = *a;
+    *a = *b;
+    *b = swap;
+}
 
 int main()
 {
     char str1 [] = "Jarrod";
     char str2 [] = "sam";
+
+    ft_swap(str1, str2);
     
     printf("str1 = %s, str2 = %s", str1, str2);
 
