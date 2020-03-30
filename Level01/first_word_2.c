@@ -39,19 +39,22 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <unistd.h>
 
-int ft_strlen(char *str)
+void	first_word(char *str)
 {
-    int i = 0;
-
-    while (str[i] != '\0')
-        i++;
-        return(i);
+	while (*str == ' ' || *str == '\t')
+		++str;
+	while (*str != '\0' && *str != ' ' && *str != '\t')
+	{
+		write(1, str, 1);
+		++str;
+	}
 }
 
 int main(int argc, char *argv[])
 {
-    if (argc >= 2)
-        write(1, argv[1], ft_strlen(argv[1]));
+    if (argc == 2)
+        first_word(argv[1]);
+
         write(1, "\n", 1);
         return(0);
 }
