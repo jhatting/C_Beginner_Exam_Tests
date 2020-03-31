@@ -31,7 +31,7 @@ $
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
 
-#include <unist.d>
+#include <unistd.h>
 
 void ulstr(char *str)
 {
@@ -51,4 +51,11 @@ void ulstr(char *str)
     }
 }
 
+int main(int argc, char *argv[])
+{
+    if (argc ==2)
+        ulstr(argv[1]);
 
+        write(1,"\n",1);
+        return(0);
+}
