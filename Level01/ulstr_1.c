@@ -29,3 +29,13 @@ $
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
+
+#include <unistd.h>
+
+void ulstr(char *str)
+{
+    char c;
+
+    int i = 0;
+
+    while (
