@@ -50,7 +50,7 @@ void aff_a(char *str)
 int main(int argc, char *argv[])
 {
     if (argc == 2)
-        write(1, aff_a(argv[1]), 1);
+        aff_a(argv[1]);
         else 
             write(1, "a\n", 2);
             return(0);
