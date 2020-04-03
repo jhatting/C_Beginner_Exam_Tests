@@ -38,4 +38,11 @@ void ulstr(char *str)
 
     int i = 0;
 
-    while (
+    while (str[i])
+    {
+        if (str[i] >= 'A' && str[i] <= 'Z')
+            c = str[i] + ('a' - 'A');
+            else if (str[i] >='a' && str[i] <= 'z')
+                c = str[i] - ('a' - 'A');
+
+
