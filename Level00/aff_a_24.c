@@ -36,7 +36,7 @@ void aff_a(char *str)
 {
     if (*str != '\0')
     {
-        while (*str[] == 'a')
+        while (*str == 'a')
         {
             write(1, "a", 1);
             break;
