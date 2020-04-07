@@ -44,8 +44,10 @@ void first_word(char *str)
     while (*str == ' ' || *str == '\t')
             str++;
             while (*str != ' ' && *str != '\0' && *str != '\t')
+            {
                 write(1, str, 1);
                 str++;
+            }
 }
 
 int main(int argc, char *argv[])
