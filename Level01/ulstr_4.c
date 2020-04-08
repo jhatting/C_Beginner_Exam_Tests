@@ -45,13 +45,13 @@ void ulstr(char *str)
             else if (str[i] >= 'a' && str[i] <= 'z')
                 c = str[i] - ('a' - 'z');
                 else
-                {
                     c = str[i];
+
+                    write(1, &c, 1);
                     i++;
-                }
     }
 }
-
+           
 int main (int argc, char *argv[])
 {
     if (argc >= 2)
