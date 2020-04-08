@@ -43,7 +43,7 @@ void ulstr(char *str)
         if (str[i] >= 'A' && str[i] <= 'Z')
             c = str[i] + ('a' - 'A');
             else if (str[i] >= 'a' && str[i] <= 'z')
-                c = str[i] - ('a' - 'z');
+                c = str[i] - ('a' - 'A');
                 else
                     c = str[i];
 
