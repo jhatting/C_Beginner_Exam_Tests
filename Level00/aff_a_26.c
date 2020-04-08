@@ -43,6 +43,7 @@ void aff_a(char *str)
         }
         str++;
     }
+    write(1, "\n", 1);
 }
 
 int main(int argc, char *argv[])
