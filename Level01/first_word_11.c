@@ -43,7 +43,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void first_word(char *str)
 {
-    while (*str == ' ' && *str == '\t')
+    while (*str == ' ' || *str == '\t')
         str++;
         while (*str != ' ' && *str != '\0' && *str != '\t')
         {
