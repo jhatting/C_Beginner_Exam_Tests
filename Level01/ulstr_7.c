@@ -48,8 +48,8 @@ void ulstr(char *str)
             c = str[i];
 
             write(1, &c, 1);
+            i++;
     }
-   i++;
 }
 
 int main(int argc, char *argv[])
