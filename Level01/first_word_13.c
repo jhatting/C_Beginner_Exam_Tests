@@ -42,11 +42,13 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void first_word(char *str)
 {
-    while (*str == ' ' && *str == '\t')
-        str++'
-        while (*str != '\0' && *st != ' ' && *str != '\t')
+    while (*str == ' ' || *str == '\t')
+        str++;
+        while (*str != '\0' && *str != ' ' && *str != '\t')
+        {
             write(1, str, 1);
             str++;
+        }
 }
 
 int main(int argc, char *argv[])
