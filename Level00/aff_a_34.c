@@ -1,12 +1,8 @@
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-* File Name : aff_a_33.c
+* File Name : aff_a_34.c
 
-<<<<<<< HEAD
 * Purpose :
-=======
-* Purpose : 
->>>>>>> 86f61c6725a8441c74ed80933ee0c185137a28ae
 Assignment name  : aff_a
 Expected files   : aff_a.c
 Allowed functions: write
@@ -28,20 +24,13 @@ $
 $> ./aff_a | cat -e
 a$
 
-<<<<<<< HEAD
-* Creation Date : 19-04-2020
 
-* Last Modified :
-
-* Created By : Jarrod Hatting
-=======
-* Creation Date : 15-04-2020
+* Creation Date : 16-04-2020
 
 * Last Modified :
 
 * Created By :  
 
->>>>>>> 86f61c6725a8441c74ed80933ee0c185137a28ae
 _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <unistd.h>
@@ -57,27 +46,14 @@ void aff_a(char *str)
         }
         str++;
     }
-<<<<<<< HEAD
     write(1, "\n", 1);
-}
-
-int main(int argc, char *argv[])
-{
-    if (argc == 2)
-        aff_a(argv[1]);
-       else 
-           write(1, "a\n", 2);
-           return(0);
-=======
-    write(1,"\n", 1);
 }
 
 int main (int argc, char *argv[])
 {
     if (argc == 2)
         aff_a(argv[1]);
-        else 
-            write(1, "a\n",2);
+        else
+            write(1, "a\n", 2);
             return(0);
->>>>>>> 86f61c6725a8441c74ed80933ee0c185137a28ae
 }
