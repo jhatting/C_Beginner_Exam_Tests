@@ -35,4 +35,23 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 #include <unistd.h>
 
 void ulstr(char *str)
+{
+    while (*str != '\0')
+    {
+        if (*str == 'Z' || *str == 'z')
+            *str = *str - ('z' - 'a')
+            else if ((*str >= 'a' && *str <= 'y') || (*str >= 'A' && *str <= 'Y'))
+                *str = *str + 1;
 
+                write(1, str, 1);
+                str++;
+    }
+}
+
+int main(int argc, char *argv[])
+{
+    if (argc == 2)
+        ulstr(argv[1]);
+        write(1, "\n", 1);
+        return(0);
+}
