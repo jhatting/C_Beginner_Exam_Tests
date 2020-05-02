@@ -63,7 +63,7 @@ void repeat_alpha(char *str)
                 ft_putchar_n(*str, *str + 1 - 'A');
                 else
                     write(1, str, 1);
-                    ++str:
+                    ++str;
                     }
 }
 
