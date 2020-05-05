@@ -47,3 +47,11 @@ void aff_a(char *str)
     write(1, "a\n", 1);
 }
 
+int main(int arc, char *argv[])
+{
+    if (argc == 2)
+        aff_a(argv[1]);
+        else
+        write(1, "a\n", 2);
+        return(0);
+}
