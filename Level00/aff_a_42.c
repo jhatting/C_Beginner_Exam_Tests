@@ -30,3 +30,20 @@ a$
 
 * Created By : Jarrod Donovan Hatting 
 _._._._._._._._._._._._._._._._._._._._._.*/
+
+#include <unistd.h>
+
+void aff_a(char *str)
+{
+    if (*str != '\0')
+    {
+        while( *str == 'a')
+        {
+            write(1, "a", 1);
+            break;
+        }
+        str++;
+    }
+    write(1, "a\n", 1);
+}
+
