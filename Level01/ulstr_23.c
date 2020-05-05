@@ -55,7 +55,7 @@ void ulstr(char *str)
 
 int main(int argc, char *argv[])
 {
-    if (arg == 2)
+    if (argc == 2)
         ulstr(argv[1]);
        write(1, "\n", 1);
        return(0);
