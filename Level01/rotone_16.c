@@ -47,7 +47,7 @@ void rotone(char *str)
     {
         if (*str == 'z' || *str == 'Z')
             *str = *str - ('z' - 'a');
-            else if ((*str >= 'A' && *str <= 'Y') || (*str >= 'a' && *str <= 'y))
+            else if ((*str >= 'A' && *str <= 'Y') || (*str >= 'a' && *str <= 'y'))
                 *str = *str + 1;
 
                 write (1, str, 1);
