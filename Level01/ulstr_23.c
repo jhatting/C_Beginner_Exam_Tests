@@ -34,7 +34,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <unistd.h>
 
-void (char *str)
+void ulstr(char *str)
 {
     int i = 0;
     char c;
@@ -46,4 +46,17 @@ void (char *str)
             else if (str[i] >= 'a' && str[i] <= 'z')
                 c = str[i] - ('a' - 'A');
                 else 
-               
+              c =str[i];
+
+              write(1, &c, 1);
+              str++;
+    }
+}
+
+int main(int argc, char *argv[])
+{
+    if (arg == 2)
+        ulstr(argv[1]);
+       write(1, "\n", 1);
+       return(0);
+}
