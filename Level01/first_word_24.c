@@ -50,7 +50,7 @@ void first_word(char *str)
         }
 }
 
-int main (argc, chr *argv[])
+int main (int argc, char *argv[])
 {
     if (argc == 2)
         first_word(argv[1]);
