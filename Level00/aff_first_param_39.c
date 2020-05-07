@@ -42,7 +42,7 @@ int ft_strlen(char *str)
         return(i);
 }
 
-int main(int argc, char *str[])
+int main(int argc, char *argv[])
 {
     if (argc >= 0)
         write(1, argv[1], ft_strlen(argv[1]));
