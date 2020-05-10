@@ -37,7 +37,7 @@ void rev_print(char *str)
 
     while (str[i] != '\0' && i >= 0)
         ++i;
-       --i;
+      
        {
            write(1, str+ i, 1);
            --i;
