@@ -45,5 +45,9 @@ void rev_print(char *str)
        }
 }
 
-~:wq
-
+int main(int argc, char *argv[])
+{
+    if (argc == 2)
+        rev_print(argv[1]);
+        return(0);
+}
