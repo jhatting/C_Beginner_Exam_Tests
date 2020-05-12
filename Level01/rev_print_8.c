@@ -1,8 +1,9 @@
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-* File Name : rev_print_7.c
+* File Name : rev_print_8.c
 
 * Purpose :
+
 Assignment name  : rev_print
 Expected files   : rev_print.c
 Allowed functions: write
@@ -22,7 +23,7 @@ emosewa era seinoP$
 $> ./rev_print | cat -e
 $
 
-* Creation Date : 09-05-2020
+* Creation Date : 11-05-2020
 
 * Last Modified :
 
@@ -33,22 +34,22 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void rev_print(char *str)
 {
-    int i = 0;
+    int i =0;
 
     while (str[i] != '\0')
         ++i;
       --i;
-        while (i >= 0)
-       {
-           write(1, str+ i, 1);
-           --i;
-       }
+    while (i >= 0)
+    {
+        write(1, str + i, 1);
+        --i;
+    }
 }
 
-int main(int argc, char *argv[])
+int main (int argc, char *argv[])
 {
-    if (argc == 2)
-        rev_print(argv[1]);
-        write(1, "\n", 1);
-        return(0);
+    if (argc ==2 )
+        rev_print(char *str)
+       write(1, "\n", 1);
+       return(0);
 }
