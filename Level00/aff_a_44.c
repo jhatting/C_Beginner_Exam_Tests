@@ -3,6 +3,10 @@
 * File Name : aff_a_44.c
 
 * Purpose :
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4a7e00fef90851e9c62c67fa2678d1a14ae8f941
 Assignment name  : aff_a
 Expected files   : aff_a.c
 Allowed functions: write
@@ -25,9 +29,43 @@ $> ./aff_a | cat -e
 a$
 
 
+<<<<<<< HEAD
 * Creation Date : 12-05-2020
 
 * Last Modified :
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
+=======
+* Creation Date : 06-05-2020
+
+* Last Modified :
+
+* Created By : Jarrod Donovan Hatting 
+_._._._._._._._._._._._._._._._._._._._._.*/
+
+#include <unistd.h>
+
+void aff_a(char *str)
+{
+    if (*str != '\0')
+    {
+        while (*str == 'a')
+        {
+            write (1, "a", 1);
+            break;
+        }
+        str++;
+    }
+    write(1, "\n", 1);
+}
+
+int main (int argc, char *argv[])
+{
+    if (argc == 2)
+        aff_a(argv[1]);
+        else 
+            write(1, "a\n", 2);
+            return(0);
+}
+>>>>>>> 4a7e00fef90851e9c62c67fa2678d1a14ae8f941
