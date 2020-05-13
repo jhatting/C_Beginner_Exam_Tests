@@ -36,9 +36,9 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void ulstr(char *str)
 {
-    while (str* != '\0')
+    while (*str != '\0')
     {
-        if (str* == 'Z' || str* == 'z')
+        if (*str == 'Z' || *str == 'z')
             *str = *str - ('z' - 'a');
             else if ((*str >= 'A' && *str <= 'Z') || ( *str >= 'a' && *str <= 'z'));
             *str = *str + 1;
