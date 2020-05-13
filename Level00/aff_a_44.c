@@ -1,16 +1,11 @@
-/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+/ -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
 * File Name : aff_a_44.c
 
 * Purpose :
-<<<<<<< HEAD
-=======
-
->>>>>>> 4a7e00fef90851e9c62c67fa2678d1a14ae8f941
 Assignment name  : aff_a
 Expected files   : aff_a.c
 Allowed functions: write
---------------------------------------------------------------------------------
 
 Write a program that takes a string, and displays the first 'a' character it
 encounters in it, followed by a newline. If there are no 'a' characters in the
@@ -27,23 +22,7 @@ $> ./aff_a "ThE Ck3 Is L|3" | cat -e
 $
 $> ./aff_a | cat -e
 a$
-
-
-<<<<<<< HEAD
-* Creation Date : 12-05-2020
-
-* Last Modified :
-
-* Created By : Jarrod Hatting
-_._._._._._._._._._._._._._._._._._._._._.*/
-=======
-* Creation Date : 06-05-2020
-
-* Last Modified :
-
-* Created By : Jarrod Donovan Hatting 
-_._._._._._._._._._._._._._._._._._._._._.*/
-
+/................................
 #include <unistd.h>
 
 void aff_a(char *str)
@@ -68,4 +47,3 @@ int main (int argc, char *argv[])
             write(1, "a\n", 2);
             return(0);
 }
->>>>>>> 4a7e00fef90851e9c62c67fa2678d1a14ae8f941
