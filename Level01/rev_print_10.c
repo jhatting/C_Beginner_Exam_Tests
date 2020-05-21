@@ -52,5 +52,5 @@ int main(int argc, char *argv[])
     if (argc == 2)
         rev_print(argv[1]);
        write(1, "\n", 1);
-       retunr(0);
+       return(0);
 }
