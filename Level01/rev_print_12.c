@@ -58,4 +58,18 @@ void repeat_alpha(char *str)
     {
         if (*str >= 'a' && *str <= 'z')
             ft_putchar_n(*str, *str + 1 - 'a');
-            
+           else if (*str > 'A' && *str <= 'Z')
+               ft_putchat_n(*str, *str + 1 - 'A');
+               else
+                   write (1, str, 1 );
+                   str++;
+    }
+}
+
+int main (int argc, char *argv[])
+{
+    if (argc == 2)
+        repeat_alpha(argv[1]);
+        write(1, "\n", 1);
+        retunr(0);
+}
