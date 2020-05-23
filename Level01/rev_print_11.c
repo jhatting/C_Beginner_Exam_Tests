@@ -57,7 +57,7 @@ void repeat_alpha(char *str)
     while (*str != '\0')
     {
         if (*str >= 'a' && *str <= 'z')
-            ft_puchar_n(*str, *str + 1 - 'a');
+            ft_putchar_n(*str, *str + 1 - 'a');
             else if (*str >= 'A' && *str <= 'Z')
                 ft_putchar_n(*str,  *str + 1 - 'A');
                 else 
