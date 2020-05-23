@@ -43,7 +43,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <unistd.h>
 
-void ft_putchar_n(int i, char c)
+void ft_putchar_n(char c, int i)
 {
     while (1 > 0)
     {
@@ -57,9 +57,9 @@ void repeat_alpha(char *str)
     while (*str != '\0')
     {
         if (*str >= 'a' && *str <= 'z')
-            *str = *str + 1 - 'a';
+            ft_puchar_n(*str = *str + 1 - 'a');
             else if (*str >= 'A' && *str <= 'Z')
-                *str = *str + 1 - 'A';
+                ft_putchar_n(*str = *str + 1 - 'A');
                 else 
                     write(1, str , 1);
 
@@ -70,7 +70,7 @@ void repeat_alpha(char *str)
 int main(int argc, char *argv[])
 {
     if (argc == 2)
-        repeat_alpha(arv[1]);
+        repeat_alpha(argv[1]);
         write(1, "\n", 1);
         return(0);
 }
