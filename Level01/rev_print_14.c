@@ -1,6 +1,6 @@
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-* File Name : rev_print_13.c
+* File Name : rev_print_14.c
 
 * Purpose :
 
@@ -25,31 +25,9 @@ $
 
 * Creation Date : 24-05-2020
 
-* Last Modified : Sun May 24 10:15:15 2020
+* Last Modified :
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
 
-#include <unistd.h>
 
-void rev_print(char *str)
-{
-    int i = 0;
-
-    while (str[i] != '\0')
-        ++i;
-     --i;
-     while (i >= 0)
-     {
-         write(1, str + i, 1);
-         --i;
-     }
-}
-
-int main (int argc, char *argv[])
-{
-    if (argc == 2)
-        rev_print(argv[1]);
-        write(1, "\n", 1);
-        return (0);
-}
