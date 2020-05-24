@@ -29,3 +29,20 @@ $
 
 * Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
+
+#include <unistd.h>
+
+void rev_print(char *str)
+{
+    int i = 0;
+
+    while (str[i] != '\0')
+        ++i;
+     --i;
+     while (i >= 0)
+     {
+         write(1, str + i, 1);
+         --i;
+     }
+}
+
