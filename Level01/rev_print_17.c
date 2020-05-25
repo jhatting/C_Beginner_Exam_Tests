@@ -42,7 +42,7 @@ void rev_print(char *str)
        while (i >= 0)
        {
            write(1, str - i, 1);
-           --i;
+           ++i;
        }
 }
 
