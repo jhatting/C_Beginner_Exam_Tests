@@ -23,13 +23,17 @@ $> ./aff_a "ThE Ck3 Is L|3" | cat -e
 $
 $> ./aff_a | cat -e
 a$
-
-
 * Creation Date : 26-05-2020
 
 * Last Modified :
 
 * Created By : Jarrod Donovan Hatting 
+=======
+* Creation Date : 12-05-2020
+
+* Last Modified :
+
+* Created By : Jarrod Hatting
 _._._._._._._._._._._._._._._._._._._._._.*/
 
 #include <unistd.h>
@@ -38,7 +42,7 @@ void aff_a(char *str)
 {
     while (str* != '\0')
     {
-        while (str* == 'a')
+        while (*str == 'a')
         {
             write(1, "a", 1);
             break;
@@ -57,4 +61,16 @@ int main(it argc, char *argv[])
           return(0);
 }
 
+
+    write (1, "\n", 1);
+}
+
+int main (int argc, char *argv[])
+{
+    if (argc == 2)
+        aff_a(argv[1]);
+       else 
+           write(1, "a\n", 2);
+           return(0);
+}
 

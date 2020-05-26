@@ -1,11 +1,12 @@
-/ -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-* File Name : aff_a_44.c
+* File Name : aff_a_46.c
 
 * Purpose :
 Assignment name  : aff_a
 Expected files   : aff_a.c
 Allowed functions: write
+--------------------------------------------------------------------------------
 
 Write a program that takes a string, and displays the first 'a' character it
 encounters in it, followed by a newline. If there are no 'a' characters in the
@@ -22,7 +23,14 @@ $> ./aff_a "ThE Ck3 Is L|3" | cat -e
 $
 $> ./aff_a | cat -e
 a$
-/................................
+
+* Creation Date : 16-05-2020
+
+* Last Modified :
+
+* Created By : Jarrod Hatting
+_._._._._._._._._._._._._._._._._._._._._.*/
+
 #include <unistd.h>
 
 void aff_a(char *str)
