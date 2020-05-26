@@ -46,6 +46,8 @@ void ulstr(char *str)
                 c =str[i] - ('a' - 'A');
                 else 
                     c = str[i];
+
+                    write(1, &c, 1);
                     str++;
     }
 }
