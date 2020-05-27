@@ -1,8 +1,9 @@
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
-* File Name : rev_print_18.c
+* File Name : rev_print_19.c
 
 * Purpose :
+
 
 Assignment name  : rev_print
 Expected files   : rev_print.c
@@ -23,6 +24,7 @@ emosewa era seinoP$
 $> ./rev_print | cat -e
 $
 
+
 * Creation Date : 26-05-2020
 
 * Last Modified :
@@ -30,20 +32,21 @@ $
 * Created By : Jarrod Donovan Hatting 
 _._._._._._._._._._._._._._._._._._._._._.*/
 
+
 #include <unistd.h>
 
 void rev_print(char *str)
 {
     int i = 0;
 
-    while (str[i] !='\0')
-        ++i;
+    while (str[i] != '\0')
+    ++i;
+   --i;
+   while ( i >= 0)
+   {
+       write(1, str + i, 1);
        --i;
-       while (i >= 0)
-       {
-           write(1, str + i, 1);
-           --i;
-       }
+   }
 }
 
 int main(int argc, char *argv[])
