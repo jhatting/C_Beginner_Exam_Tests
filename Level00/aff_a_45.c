@@ -23,7 +23,12 @@ $> ./aff_a "ThE Ck3 Is L|3" | cat -e
 $
 $> ./aff_a | cat -e
 a$
+* Creation Date : 26-05-2020
 
+* Last Modified :
+
+* Created By : Jarrod Donovan Hatting 
+=======
 * Creation Date : 12-05-2020
 
 * Last Modified :
@@ -35,7 +40,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void aff_a(char *str)
 {
-    if (*str != '\0')
+    while (*str != '\0')
     {
         while (*str == 'a')
         {
@@ -44,7 +49,7 @@ void aff_a(char *str)
         }
         str++;
     }
-    write (1, "\n", 1);
+    write(1, "\n", 1);
 }
 
 int main (int argc, char *argv[])
@@ -55,3 +60,4 @@ int main (int argc, char *argv[])
            write(1, "a\n", 2);
            return(0);
 }
+
