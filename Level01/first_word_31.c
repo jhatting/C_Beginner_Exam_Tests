@@ -41,7 +41,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void first_word(char *str)
 {
-    while (*str == ' ' || *str == '\t)
+    while (*str == ' ' || *str == '\t')
         str++;
         while (*str != ' ' && *str != '\0' && *str != '\t')
         {
@@ -53,7 +53,7 @@ void first_word(char *str)
 int main (int argc, char *argv[])
 {
     if (argc == 2)
-        firs_word(argv[1]);
+        first_word(argv[1]);
         write(1, "\n", 1);
         return(0);
 }
