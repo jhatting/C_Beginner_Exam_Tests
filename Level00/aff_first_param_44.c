@@ -41,9 +41,9 @@ int ft_strlen(char *str)
         return(i);
 }
 
-int main (int argc, char *argc[])
+int main (int argc, char *argv[])
 {
-    if(argc == 2)
+    if(argc >= 2)
         write (1, argv[1], ft_strlen(argv[1]));
        write (1, "\n", 1);
        return(0);
