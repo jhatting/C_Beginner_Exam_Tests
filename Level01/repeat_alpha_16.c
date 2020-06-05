@@ -45,7 +45,7 @@ _._._._._._._._._._._._._._._._._._._._._.*/
 
 void ft_putchar_n(char c, int i)
 {
-    while (str[i])
+    while (i >0)
     {
         write(1, &c, 1);
         --i;
